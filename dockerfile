@@ -1,7 +1,7 @@
 # Use the base image from the requirement
 FROM devopsedu/webapp
 
-# Install any necessary PHP dependencies if needed
+# Install any necessary PHP dependencies if needed or leave it
 #RUN apt-get update && apt-get install -y ...
 
 # The base image likely already has Apache and PHP configured.
