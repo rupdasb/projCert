@@ -2,13 +2,13 @@
 FROM devopsedu/webapp
 
 # Install any necessary PHP dependencies if needed
-RUN apt-get update && apt-get install -y ...
+#RUN apt-get update && apt-get install -y ...
 
 # The base image likely already has Apache and PHP configured.
 # We just need to copy our website code to the appropriate directory.
 # Assuming the document root is /var/www/html
 # Copy the entire repository content to the web root
-COPY . /var/www/html/
+COPY website/ /var/www/html/
 
 # Expose port 80
 EXPOSE 80
