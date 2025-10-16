@@ -14,4 +14,4 @@ COPY website/ /var/www/html/
 EXPOSE 80
 
 # The base image likely has a CMD already, so we don't need to specify it.
-CMD ["apache2-foreground"]
+CMD ["apache2ctl","-D","FOREGROUND"]
